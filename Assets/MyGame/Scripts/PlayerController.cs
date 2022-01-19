@@ -4,29 +4,48 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool movement = true;
+    public bool canMove = true;
 
     [SerializeField]
     float maxPos;
 
     [SerializeField]
-    float moveSpeed;
+    float speed;
 
-    // Update is called once per frame
+
+
     void Update()
     {
-        if (movement)
+        if (canMove)
         {
-            PlayerMove();
+            Move();
         }
     }
 
-    private void PlayerMove()
+
+    public void Move()
     {
-        float inputX = Input.GetAxis("Horizontal");
-        transform.position = transform.position + Vector3.right * inputX * moveSpeed * Time.deltaTime;
+        float input = Input.GetAxis("Horizontal");
+
+        transform.position = transform.position + Vector3.right * input * speed * Time.deltaTime;
+
+
 
         float xPos = Mathf.Clamp(transform.position.x, -maxPos, maxPos);
-        transform.position = new Vector3(xPos, transform.position.y, transform.position.y);
+
+        transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+
     }
+
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+
+    //    if (collision.gameObject.tag == "BadCandy")
+    //    {
+    //        GameManager.instance.DecreaseLives();
+
+    //    }
+
+    //}
 }
