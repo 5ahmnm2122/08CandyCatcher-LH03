@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
 
     private float timer = 10;
     private Text timerSeconds;
+    public PlayerData data;
 
 
     void Start()
@@ -20,12 +21,12 @@ public class Timer : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timerSeconds.text = timer.ToString("f1");
+        data.timeScore = timer;
 
         if (timer <= 0)
         {
-            Debug.Log("Endtime");
-            //GameManager.instance.SaveScore();
             SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
+            data.winStatus = "You lost: Time's up!";
         }
     }
 }

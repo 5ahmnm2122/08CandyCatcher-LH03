@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 129384664}
   - component: {fileID: 129384663}
   m_Layer: 5
-  m_Name: Placeholder
+  m_Name: PlaceholderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,7 +703,7 @@ GameObject:
   - component: {fileID: 1141629925}
   - component: {fileID: 1141629924}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: NameInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,7 +915,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1230919359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2052846894}
+        m_TargetAssemblyTypeName: PlayerName, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2052846895}
+        m_TargetAssemblyTypeName: LoadScenes, Assembly-CSharp
+        m_MethodName: MainScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1230919359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,7 +990,7 @@ GameObject:
   - component: {fileID: 1362676236}
   - component: {fileID: 1362676235}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PlayerNameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1121,6 +1145,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052846893}
+  - component: {fileID: 2052846895}
+  - component: {fileID: 2052846894}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1142,3 +1168,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2052846894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052846892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86cbf9c90d0c30c43b52a05e6e73e284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: a12060b7974a73f4d88a8c53cced9872, type: 2}
+  playerName: {fileID: 1362676235}
+--- !u!114 &2052846895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052846892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdab91ddbc4064c46bfe96ee853bae89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
