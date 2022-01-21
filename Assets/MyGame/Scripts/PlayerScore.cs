@@ -12,11 +12,11 @@ public class PlayerScore : MonoBehaviour
 
     void Start()
     {
-        playerName.text = data.PlayerName;
+        playerName.text = data.playerName;
         data.score = 0;
     }
 
-    private void Update()
+    void Update()
     {
         scoreText.text = data.score.ToString();
         
@@ -26,11 +26,10 @@ public class PlayerScore : MonoBehaviour
             SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
             data.winStatus = "You lost: Negative points!";
         }
-        if (data.score >= 25)
+        if (data.score >= 40)
         {
             SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
             data.winStatus = "You won!";
         }
     }
-
     }

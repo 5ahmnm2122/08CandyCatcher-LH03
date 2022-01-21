@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class CandySpawner : MonoBehaviour
 {
-
     public GameObject[] candyPrefab;
-
     private float spawnDelay;
+    public Timer timer;
+    public GameObject tutorialScreen;
 
-
-    // Start is called before the first frame update
-    void Start()
+    public void StartSpanwerAndTimer()
     {
-        Debug.Log("Start");
         StartCoroutine(CandyShower());
+        timer.isPlaying = true;
+        tutorialScreen.SetActive(false);
     }
 
     private void SpawnCandy()
     {
-        Debug.Log("SpawnFood");
         int randomFood = Random.Range(0, candyPrefab.Length);
-
         GameObject a = Instantiate(candyPrefab[randomFood]) as GameObject;
         a.transform.position = new Vector2(Random.Range(-7, 7), 7);
     }
@@ -30,13 +27,10 @@ public class CandySpawner : MonoBehaviour
     {
         while (true)
         {
-            spawnDelay = Random.Range(0.5f, 1);
+            spawnDelay = Random.Range(0.2f, 0.6f);
             yield return new WaitForSeconds(spawnDelay);
             SpawnCandy();
-
         }
 
     }
-
-
 }

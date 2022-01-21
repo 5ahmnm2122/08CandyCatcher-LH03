@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8176cbdf0972b844bb7c23a65894a165, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  PlayerName: mau
-  score: 0
+  playerName: tset
+  score: 23
+  timeScore: 4.3829236
+  winStatus: 'You lost: Negative points!'

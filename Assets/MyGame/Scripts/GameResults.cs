@@ -13,7 +13,7 @@ public class GameResults : MonoBehaviour
 
     void Start()
     {
-        playerName.text = data.PlayerName;
+        playerName.text = data.playerName;
         score.text = data.score.ToString() + " / 25";
         result.text = data.winStatus;
         time.text = data.timeScore.ToString("f1");

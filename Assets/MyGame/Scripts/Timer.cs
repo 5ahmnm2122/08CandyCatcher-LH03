@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
 
-    private float timer = 10;
+    private float timer = 30;
     private Text timerSeconds;
     public PlayerData data;
-
+    public bool isPlaying;
 
     void Start()
     {
@@ -19,14 +19,18 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        timer -= Time.deltaTime;
-        timerSeconds.text = timer.ToString("f1");
-        data.timeScore = timer;
-
-        if (timer <= 0)
+        if (isPlaying)
         {
-            SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
-            data.winStatus = "You lost: Time's up!";
+            timer -= Time.deltaTime;
+            timerSeconds.text = timer.ToString("f1");
+            data.timeScore = timer;
+
+            if (timer <= 0)
+            {
+                SceneManager.LoadScene("EndScene", LoadSceneMode.Single);
+                data.winStatus = "You lost: Time's up!";
+            }
         }
+        
     }
 }

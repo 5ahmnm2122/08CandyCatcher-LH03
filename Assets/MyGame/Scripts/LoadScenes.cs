@@ -15,4 +15,9 @@ public class LoadScenes : MonoBehaviour
     {
         SceneManager.LoadScene("IntroScene", LoadSceneMode.Single);
     }
+
+    public void TutorialScene()
+    {
+        SceneManager.LoadScene("TutorialScene", LoadSceneMode.Single);
+    }
 }
