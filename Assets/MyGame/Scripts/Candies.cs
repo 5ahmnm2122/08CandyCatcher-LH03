@@ -9,7 +9,6 @@ public class Candies : MonoBehaviour
     public PlayerData data;
     public int points;
 
-
     void Start()
     {
         candyRB = this.GetComponent<Rigidbody2D>();

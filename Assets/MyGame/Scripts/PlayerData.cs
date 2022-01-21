@@ -9,5 +9,4 @@ public class PlayerData : ScriptableObject
     public int score;
     public float timeScore;
     public string winStatus;
-
 }

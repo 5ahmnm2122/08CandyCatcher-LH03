@@ -32,4 +32,4 @@ public class PlayerScore : MonoBehaviour
             data.winStatus = "You won!";
         }
     }
-    }
+}

@@ -31,6 +31,5 @@ public class CandySpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnDelay);
             SpawnCandy();
         }
-
     }
 }

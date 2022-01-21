@@ -12,5 +12,4 @@ public class PlayerName : MonoBehaviour
     {
         data.playerName = playerName.text;
     }
-
 }

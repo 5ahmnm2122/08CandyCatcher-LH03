@@ -31,6 +31,5 @@ public class Timer : MonoBehaviour
                 data.winStatus = "You lost: Time's up!";
             }
         }
-        
     }
 }

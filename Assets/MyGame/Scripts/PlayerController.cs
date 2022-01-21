@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
         transform.position = transform.position + Vector3.right * input * speed * Time.deltaTime;
         float xPos = Mathf.Clamp(transform.position.x, -maxPos, maxPos);
         transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
-
     }
 
 }
