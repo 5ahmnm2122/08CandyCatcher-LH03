@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
 
-    private float timer = 30;
+    private float timer = 25;
     private Text timerSeconds;
     public PlayerData data;
     public bool isPlaying;

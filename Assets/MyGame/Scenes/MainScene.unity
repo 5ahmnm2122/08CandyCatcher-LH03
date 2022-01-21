@@ -1878,7 +1878,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: To win collect 25 points!
+  m_Text: To win collect 40 points!
 --- !u!222 &665425497
 CanvasRenderer:
   m_ObjectHideFlags: 0
