@@ -1,7 +1,7 @@
 # 08CandyCatcher-LH03
 
 ### Project description:
-Simple Candy Catcher Game - The player has to catch a certain amount of candies in a certain amount of time to win.
+Simple Candy Catcher Game - The player has to catch a 40 candies within 20 seconds to win.
 
 ### Github Pages Link:
 https://5ahmnm2122.github.io/08CandyCatcher-LH03/
@@ -43,8 +43,8 @@ Halloween Nightmare Font: https://www.freefonts.io/halloween-nightmare-font/
 none
 
 ### Lessons Learned:
-* Scriptable Objects
-* Scene Management
+* How to work with scriptable ojects
+* How scene management in unity works
 
 
 Copyright by Lea Helbok
