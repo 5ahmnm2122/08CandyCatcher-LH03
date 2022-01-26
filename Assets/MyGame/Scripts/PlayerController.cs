@@ -1,25 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public bool canMove = true;
-
     [SerializeField]
     float maxPos;
 
     [SerializeField]
     float speed;
 
+    //Calls upon move method and lets cat move
     void Update()
     {
-        if (canMove)
-        {
-            Move();
-        }
+        Move();
     }
 
+    //Calculates the movement of the cat on the horizontal axis
     public void Move()
     {
         float input = Input.GetAxis("Horizontal");

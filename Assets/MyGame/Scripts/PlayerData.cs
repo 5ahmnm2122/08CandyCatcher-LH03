@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/DataSaver", order = 1)]
+//Scriptable Object to save data over multiple scenes 
+[CreateAssetMenu(fileName = "Player Data", menuName = "ScriptableObjects/PlayerData", order = 1)]
 public class PlayerData : ScriptableObject
 {
     public string playerName;

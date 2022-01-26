@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +9,7 @@ public class GameResults : MonoBehaviour
     public Text time;
     public PlayerData data;
 
+    //Take over input from inputfield and intitialise game results: score, time score and win status
     void Start()
     {
         playerName.text = data.playerName;

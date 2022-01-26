@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CandySpawner : MonoBehaviour
@@ -9,13 +8,15 @@ public class CandySpawner : MonoBehaviour
     public Timer timer;
     public GameObject tutorialScreen;
 
-    public void StartSpanwerAndTimer()
+    //Close instruction canvas and start game
+    public void StartSpawnerAndTimer()
     {
         StartCoroutine(CandyShower());
         timer.isPlaying = true;
         tutorialScreen.SetActive(false);
     }
 
+    //Spawn candy at a random position
     private void SpawnCandy()
     {
         int randomFood = Random.Range(0, candyPrefab.Length);
@@ -23,6 +24,7 @@ public class CandySpawner : MonoBehaviour
         a.transform.position = new Vector2(Random.Range(-7, 7), 7);
     }
 
+    //Endless loop to spawn candies with a random delay time
     IEnumerator CandyShower()
     {
         while (true)
