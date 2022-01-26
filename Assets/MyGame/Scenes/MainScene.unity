@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 529785248}
   - component: {fileID: 529785247}
   m_Layer: 0
-  m_Name: CandyGame_BG-01
+  m_Name: CandyGame-EmptyBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1245,7 +1245,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9255bffb22c489548a686e57dab31e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canMove: 1
   maxPos: 7
   speed: 8
 --- !u!60 &582593348
@@ -3088,7 +3087,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2041639637}
         m_TargetAssemblyTypeName: CandySpawner, Assembly-CSharp
-        m_MethodName: StartSpanwerAndTimer
+        m_MethodName: StartSpawnerAndTimer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
