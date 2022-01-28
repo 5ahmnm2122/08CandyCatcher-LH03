@@ -16,10 +16,10 @@ WebGL 960x600
 Unity Installation
 
 ### Visuals:
-![Intro Scene](./Images/IntroScreen.png)
-![Instruction Scene](./Images/InstructionScreen.png)
-![Main Scene](./Images/MainScreen.png)
-![End Scene](./Images/EndScreen.png)
+![Intro Scene](./Screenshots/IntroScreen.png)
+![Instruction Scene](./Screenshots/InstructionScreen.png)
+![Main Scene](./Screenshots/MainScreen.png)
+![End Scene](./Screenshots/EndScreen.png)
 
 ### Third party material:
 ReadMe Template by smeerws
